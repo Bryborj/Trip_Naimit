@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campaña de Recolección - Parque El Carmen, Puebla</title>
+  <meta name="description" content="Campaña comunitaria de recolección de basura y sensibilización ambiental en el Parque El Carmen, Puebla. Información del estudio, objetivos, resultados y cómo participar." />
+  <style>
+    :root{--accent:#2b8a3e;--dark:#163b2f;--muted:#6b7280;--bg:#f7faf7}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#0b1220}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34b56a);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;color:var(--dark);text-decoration:none;font-weight:600}
+    .hero{background:white;border-radius:12px;padding:28px;display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+    .hero h1{margin:0 0 8px;font-size:28px;color:var(--dark)}
+    .hero p{margin:0;color:var(--muted)}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+    .btn.secondary{background:transparent;border:2px solid var(--accent);color:var(--dark)}
+    .card{background:white;border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    section{margin-top:20px}
+    h2{margin:0 0 10px;font-size:20px;color:var(--dark)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    dl{margin:0}
+    dt{font-weight:700;color:var(--dark)}
+    dd{margin:6px 0 12px;color:var(--muted)}
+    footer{margin-top:28px;padding:20px 0;color:var(--muted);font-size:14px}
+    form label{display:block;margin:8px 0 4px;font-weight:600}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ee}
+    .small{font-size:13px;color:var(--muted)}
+    .stats{display:flex;gap:12px;flex-wrap:wrap}
+    .stat{flex:1;min-width:120px;background:linear-gradient(180deg,#fff,#fbfff9);border-radius:8px;padding:12px;border:1px solid #eef3ec}
+    .map{width:100%;height:280px;border-radius:8px;border:1px solid #e6e9ee;overflow:hidden}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}nav{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PC</div>
+        <div>
+          <div style="font-weight:700">Campaña: Parque El Carmen</div>
+          <div class="small">Sensibilización y recolección comunitaria — Puebla, Centro Histórico</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Estudio</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#evento">Únete</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>"Parque El Carmen: Recuperemos su limpieza y sentido de pertenencia"</h1>
+          <p>Proyecto comunitario basado en un estudio de Psicología Ambiental que documenta el impacto de la basura sobre la percepción, apropiación del territorio y la experiencia del espacio. Únete a la campaña de recolección y sensibilización basada en valores ambientales.</p>
+          <div class="cta">
+            <button class="btn" onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'})">Inscribirme como voluntario</button>
+            <button class="btn secondary" onclick="window.print()">Imprimir volante</button>
+          </div>
+
+          <div style="margin-top:18px" class="card">
+            <h3 style="margin:0 0 8px">Próximo evento de recolección</h3>
+            <div class="small">Fecha: [Inserte fecha]</div>
+            <div class="small">Punto de encuentro: Entrada principal del Parque El Carmen</div>
+            <div style="margin-top:10px" class="small">Trae guantes reutilizables y agua. Nosotros proporcionamos bolsas y guantes desechables si se requiere.</div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3>Resultados rápidos</h3>
+          <div class="stats" style="margin-top:10px">
+            <div class="stat"><div style="font-size:18px;font-weight:800">[—]</div><div class="small">Desechos contabilizados</div></div>
+            <div class="stat"><div style="font-size:18px;font-weight:800">[—]</div><div class="small">Usuarios encuestados</div></div>
+            <div class="stat"><div style="font-size:18px;font-weight:800">[—]</div><div class="small">Participación campaña (%)</div></div>
+          </div>
+          <div style="margin-top:12px"><a href="#resultados" class="small">Ver informe y datos</a></div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h2>Resumen del estudio</h2>
+          <p>El presente estudio analiza cómo la presencia de basura en el Parque del Carmen, ubicado en el Centro Histórico de Puebla, influye en la percepción ambiental, la apropiación del territorio y la vivencia del espacio por parte de sus usuarios. Mediante observación sistemática, encuestas y una intervención educativa breve (folletos con valores ambientales y actividades de recolección), se evaluó la relación entre contaminación visible y procesos psicoambientales.</p>
+
+          <h3 style="margin-top:12px">Principales hallazgos</h3>
+          <ul>
+            <li>La basura reduce la percepción de limpieza, seguridad y atractivo del parque.</li>
+            <li>Disminuye la apropiación del espacio y genera emociones negativas como disgusto y desconexión.</li>
+            <li>La campaña basada en valores ambientales aumentó ligeramente la disposición a mantener limpio el parque.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="objetivos">
+        <div class="grid">
+          <div class="card">
+            <h2>Objetivo general</h2>
+            <p>Analizar el impacto de la basura presente en el Parque del Carmen (Puebla) sobre la percepción ambiental, el territorio y el espacio desde la Psicología Ambiental, incorporando la evaluación de una campaña de sensibilización basada en valores ambientales.</p>
+          </div>
+
+          <div class="card">
+            <h2>Objetivos específicos</h2>
+            <ol>
+              <li>Cuantificar la basura por observación sistemática.</li>
+              <li>Describir la percepción de limpieza, seguridad y calidad ambiental entre los usuarios.</li>
+              <li>Evaluar la apropiación del espacio y territorialidad.</li>
+              <li>Implementar una campaña de recolección y valores ambientales.</li>
+              <li>Identificar cambios en la percepción posterior a la campaña.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="metodo">
+        <div class="card">
+          <h2>Método</h2>
+          <p>Diseño: Observacional, descriptivo y transversal con intervención educativa breve.</p>
+          <h3>Instrumentos</h3>
+          <ul>
+            <li>Guía de observación sistemática (registro de cantidad y tipo de residuos por zonas).</li>
+            <li>Cuestionario de percepción ambiental (escala Likert 1–5).</li>
+            <li>Materiales de campaña: folletos con valores ambientales y actividad guiada de recolección.</li>
+          </ul>
+          <h3>Procedimiento</h3>
+          <ol>
+            <li>Recorridos en cinco zonas del parque para registrar la basura.</li>
+            <li>Aplicación de encuestas a visitantes en diferentes horarios.</li>
+            <li>Implementación de mini campaña con entrega de folletos y recolección participativa.</li>
+            <li>Encuesta post-intervención para medir disposición a conductas proambientales.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="resultados">
+        <div class="card">
+          <h2>Resultados (placeholder)</h2>
+          <p>Aquí puedes pegar los datos estadísticos reales: tablas, fotografías y gráficas. Si quieres, puedo ayudarte a generar tablas y gráficas a partir de tus datos.</p>
+          <div style="margin-top:12px">
+            <button class="btn" onclick="alert('Cuando pegues tus datos, puedo generar la tabla y la gráfica en el sitio.')">Solicitar generación de tablas</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="evento">
+        <div class="grid">
+          <div class="card">
+            <h2>Cómo participar</h2>
+            <p>Participa como voluntario en las jornadas de recolección y en las actividades de sensibilización. Las acciones comunitarias refuerzan normas proambientales y aumentan la apropiación del espacio.</p>
+            <ul>
+              <li>Regístrate como voluntario en el formulario.</li>
+              <li>Asiste al punto de encuentro en la fecha anunciada.</li>
+              <li>Comparte el mensaje con familiares y amigos.</li>
+            </ul>
+
+            <div style="margin-top:10px">
+              <div class="small">Punto de encuentro (mapa):</div>
+              <div class="map">
+                <iframe width="100%" height="100%" frameborder="0" style="border:0" loading="lazy" allowfullscreen
+                  src="https://www.google.com/maps?q=Parque%20El%20Carmen%2C%20Puebla&output=embed"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div id="signup" class="card">
+            <h2>Formulario de inscripción (voluntariado)</h2>
+            <form id="volForm" onsubmit="handleSubmit(event)">
+              <label for="name">Nombre completo</label>
+              <input id="name" name="name" required />
+
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" required />
+
+              <label for="phone">Teléfono (opcional)</label>
+              <input id="phone" name="phone" />
+
+              <label for="availability">Disponibilidad</label>
+              <select id="availability" name="availability">
+                <option>Matutino</option>
+                <option>Vespertino</option>
+                <option>Fines de semana</option>
+              </select>
+
+              <label for="comments">Comentarios / habilidades (ej. logística, primeros auxilios)</label>
+              <textarea id="comments" name="comments" rows="3"></textarea>
+
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <button class="btn" type="submit">Enviar inscripción</button>
+                <button type="button" class="btn secondary" onclick="clearForm()">Limpiar</button>
+              </div>
+              <p id="formMsg" class="small" style="margin-top:8px"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="card">
+          <h2>Contacto y ética</h2>
+          <p>Si necesitas información adicional sobre el estudio, resultados o deseas colaborar en la difusión, escríbenos:</p>
+          <dl>
+            <dt>Organización responsable</dt>
+            <dd>Equipo de Psicología Ambiental — Parque El Carmen</dd>
+            <dt>Correo</dt>
+            <dd><a href="mailto:contacto@parqueelcarmen.org">contacto@parqueelcarmen.org</a></dd>
+            <dt>Consideraciones éticas</dt>
+            <dd>Participación voluntaria y anónima. Uso de datos con fines académicos.</dd>
+          </dl>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="small">© <span id="year"></span> Campaña Parque El Carmen — Proyecto de sensibilización y recolección. Palabras clave: Psicología ambiental, basura, percepción ambiental, apropiación del espacio, valores ambientales, parques urbanos.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const availability = document.getElementById('availability').value;
+      const comments = document.getElementById('comments').value.trim();
+
+      // Local storage register (temporal) — para integración posterior con servidor
+      const regs = JSON.parse(localStorage.getItem('volunteers') || '[]');
+      regs.push({name,email,phone,availability,comments,created:new Date().toISOString()});
+      localStorage.setItem('volunteers', JSON.stringify(regs));
+
+      document.getElementById('formMsg').textContent = 'Inscripción recibida. Gracias por sumarte. Te contactaremos con más detalles.';
+      document.getElementById('volForm').reset();
+    }
+
+    function clearForm(){
+      document.getElementById('volForm').reset();
+      document.getElementById('formMsg').textContent = '';
+    }
+  </script>
+</body>
+</html>
